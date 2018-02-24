@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aecTest/aecTest.iml" filepath="$PROJECT_DIR$/aecTest/aecTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libaec/libaec.iml" filepath="$PROJECT_DIR$/libaec/libaec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libwebrtcaec/libwebrtcaec.iml" filepath="$PROJECT_DIR$/libwebrtcaec/libwebrtcaec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webrtc_aec.iml" filepath="$PROJECT_DIR$/webrtc_aec.iml" />
+    </modules>
+  </component>
+</project>

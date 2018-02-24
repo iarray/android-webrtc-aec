@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_strat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="启动" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="stopAEC"
+            android:text="停止" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="switchSound"
+            android:text="关闭声音" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="switchSpeak"
+            android:text="关闭录音" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playFilterSound"
+            android:text="播放回声消除结果" />
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playRecodeSound"
+            android:text="播放录制的原声音频"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="-------------------------测试方法-------------------------"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试流程：\n1.点击启动按钮回声消除功能开始运行,同时开始播放apk/assets目录下的音频文件,并开始录制音频,此时可以对着手机说话。\n2.点击停止按钮,停止播放/采集,此时可以点击‘播放回声消除结果’按钮,来检测回声消除的效果。\n\n如果在播放回声消除结果中只听到了自己的声音,说明测试成功"/>
+    </LinearLayout>
+
+</ScrollView>
