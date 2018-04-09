@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/aecTest/aecTest.iml" filepath="$PROJECT_DIR$/aecTest/aecTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libaec/libaec.iml" filepath="$PROJECT_DIR$/libaec/libaec.iml" />
+      <module fileurl="file://D:\Soben\android-webrtc-aec\aecTest\aecTest.iml" filepath="D:\Soben\android-webrtc-aec\aecTest\aecTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-webrtc-aec.iml" filepath="$PROJECT_DIR$/android-webrtc-aec.iml" />
+      <module fileurl="file://D:\Soben\android-webrtc-aec\libaec\libaec.iml" filepath="D:\Soben\android-webrtc-aec\libaec\libaec.iml" />
       <module fileurl="file://$PROJECT_DIR$/libwebrtcaec/libwebrtcaec.iml" filepath="$PROJECT_DIR$/libwebrtcaec/libwebrtcaec.iml" />
-      <module fileurl="file://$PROJECT_DIR$/webrtc_aec.iml" filepath="$PROJECT_DIR$/webrtc_aec.iml" />
+      <module fileurl="file://D:\Soben\android-webrtc-aec\libwebrtcaec\libwebrtcaec.iml" filepath="D:\Soben\android-webrtc-aec\libwebrtcaec\libwebrtcaec.iml" />
+      <module fileurl="file://D:\Soben\android-webrtc-aec\webrtc_aec.iml" filepath="D:\Soben\android-webrtc-aec\webrtc_aec.iml" />
     </modules>
   </component>
 </project>

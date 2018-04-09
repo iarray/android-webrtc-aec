@@ -28,6 +28,8 @@ android {
 		}
 	}
 }
+
+/*
 tasks.withType(JavaCompile) {
 	compileTask -> compileTask.dependsOn ndkBuild
 }
@@ -58,6 +60,7 @@ task ndkClean(type: Exec, description: 'clean JNI libraries') {
 }
 
 clean.dependsOn 'ndkClean'
+*/
 
 dependencies {
 	compile fileTree(dir: 'libs', include: ['*.jar'])

@@ -29,7 +29,7 @@ public class MainActivity extends Activity implements RecodeAudioDataListener, O
 	BufferedOutputStream mRecodeStream;
 	Thread mPlayThread;
 	Thread mSendThread;
-	boolean isPlay;
+	volatile boolean isPlay;
 	Frequency hz = Frequency.PCM_8K;
 	int frameSize = 800;
 	@Override
@@ -68,7 +68,12 @@ public class MainActivity extends Activity implements RecodeAudioDataListener, O
 							Log.i("TAG", "time:"+System.currentTimeMillis());
 							while(!audioPlayer.putPlayData(frame)){
 								Log.i("TAG", "putPlayData sleep");
-								Thread.sleep(10);
+								try {
+									Thread.sleep(10);
+								}
+								catch (Exception e){
+									e.printStackTrace();
+								}
 							}
 							length = 0;
 						} else {
@@ -139,10 +144,10 @@ public class MainActivity extends Activity implements RecodeAudioDataListener, O
 				mPlayThread.interrupt();
 				mPlayThread = null;
 			}
-			if (mSendThread != null) {
-				mSendThread.interrupt();
-				mSendThread = null;
-			}
+//			if (mSendThread != null) {
+//				mSendThread.interrupt();
+//				mSendThread = null;
+//			}
 			if (mRecodeStream != null) {
 				mRecodeStream.flush();
 				mRecodeStream.close();
@@ -150,7 +155,7 @@ public class MainActivity extends Activity implements RecodeAudioDataListener, O
 			}
 			audioPlayer.stop();
 			audioPlayer.release();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		findViewById(R.id.btn_strat).setEnabled(true);
